@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="userinfo">
+      <t-avatar class="avatar-example" t-class-content="external-class-content" badge-props="{{ {count: 8, offset: [6, 6] } }}">
+        <t-button variant="outline" bind:tap="openDrawerBase" block size="large" theme="primary">点击登陆</t-button>
+        <t-drawer visible="{{visible}}" placement="{{placement}}" items="{{sidebar}}" bind:overlay-click="overlayClick" bind:item-click="itemClick"></t-drawer>
+      </t-avatar>
+      
+    </view>
+  </view>
+</scroll-view>

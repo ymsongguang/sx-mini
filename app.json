@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "YMS的小程序",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-fab": "tdesign-miniprogram/fab/fab",
+    "t-drawer": "tdesign-miniprogram/drawer/drawer",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-avatar-group": "tdesign-miniprogram/avatar-group/avatar-group"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/zhuye1.png",
+      "selectedIconPath": "images/zhuye2.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/images/wode1.png",
+      "selectedIconPath": "images/wode2.png"
+    }
+  ],
+  "borderStyle": "black"    
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

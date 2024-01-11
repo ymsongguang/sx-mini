@@ -1,0 +1,16 @@
+.userinfo {
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+  z-index: 100;
+}
+.avatar-example:not(:last-child) {
+  margin-right: 0rpx;
+}
+
+.external-class-content {
+  color: #000000;
+  background-color: #0052d9;
+  font-weight: 400;
+  font-size: small;
+}
