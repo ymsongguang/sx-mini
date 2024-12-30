@@ -1,16 +1,69 @@
-.userinfo {
-  position: fixed;
-  left: 0rpx;
-  top: 0rpx;
-  z-index: 100;
-}
-.avatar-example:not(:last-child) {
-  margin-right: 0rpx;
+/* 容器样式 */
+.container {
+  padding: 20rpx;
+  height: 50%;
+  background-color: aliceblue;
 }
 
-.external-class-content {
-  color: #000000;
-  background-color: #0052d9;
-  font-weight: 400;
+/* 搜索栏样式 */
+.search-bar {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  margin-bottom: 20rpx;
+  border: 1px solid #000; /* 边框颜色改为黑色 */
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 10; /* 输入框占据剩余空间 */
+  height: 60rpx;
+  padding: 10rpx;
+  border: none; /* 移除输入框默认边框 */
+}
+
+.search-bar button {
+  width: auto;
+  height: 60rpx;
+  border: 1px solid #000;
+  border-left: none; /* 移除左边框以连接输入框 */
+  border-radius: 0 5rpx 5rpx 0; /* 右侧圆角 */
   font-size: small;
+}
+
+/* 列表项样式 */
+.list {
+  border: 1px solid #000;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1px solid #000;
+}
+
+.item-content {
+  flex: 1;
+  font-size: 32rpx;
+  text-align: left; /* 文本左对齐 */
+  word-break: break-all; /* 长单词或URL地址可以在任意字符处换行 */
+  white-space: normal; /* 允许文本换行 */
+  overflow-wrap: break-word; /* 长单词将在必要时断开 */
+}
+
+.item-button {
+  width: auto;
+  height: 60rpx;
+  border: 1px solid #000;
+  border-radius: 5rpx;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+
+.loading {
+  text-align: center;
+  padding: 20rpx;
 }

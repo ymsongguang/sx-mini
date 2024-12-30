@@ -5,7 +5,7 @@ App({
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    console.log('页面加载时, 从后台获取菜单列表')
     // 登录
     wx.login({
       success: res => {

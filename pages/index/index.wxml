@@ -1,12 +1,20 @@
 <!--index.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <t-avatar class="avatar-example" t-class-content="external-class-content" badge-props="{{ {count: 8, offset: [6, 6] } }}">
-        <t-button variant="outline" bind:tap="openDrawerBase" block size="large" theme="primary">点击登陆</t-button>
-        <t-drawer visible="{{visible}}" placement="{{placement}}" items="{{sidebar}}" bind:overlay-click="overlayClick" bind:item-click="itemClick"></t-drawer>
-      </t-avatar>
-      
+<view class="container">
+  <view class="search-bar">
+    <input placeholder="请输入关键字" bindinput="handleInput" />
+    <button bindtap="handleSearch">搜索</button>
+  </view>
+  <view class="list">
+    <block wx:for="{{cryptoList}}" wx:key="index">
+      <view class="item">
+        <input disabled="disabled" value="{{item.mint}}"/>
+        <button class="item-button" bindtap="copyToClipboard" data-index="{{index}}">复制</button>
+      </view>
+    </block>
+    <view class="loading" wx:if="{{loading}}">
+      <text>加载中...</text>
     </view>
   </view>
+</view>
 </scroll-view>

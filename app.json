@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/user/user"
+    "pages/more/more",
+    "pages/user/user",
+    "pages/userWallet/userWallet"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -13,7 +15,12 @@
     "t-fab": "tdesign-miniprogram/fab/fab",
     "t-drawer": "tdesign-miniprogram/drawer/drawer",
     "t-avatar": "tdesign-miniprogram/avatar/avatar",
-    "t-avatar-group": "tdesign-miniprogram/avatar-group/avatar-group"
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-avatar-group": "tdesign-miniprogram/avatar-group/avatar-group",
+    "t-navbar": "tdesign-miniprogram/navbar/navbar",
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-col": "tdesign-miniprogram/col/col",
+    "t-row": "tdesign-miniprogram/row/row"
   },
   "tabBar": {
     "list": [{
@@ -23,10 +30,16 @@
       "selectedIconPath": "images/zhuye2.png"
     },
     {
+      "pagePath": "pages/more/more",
+      "text": "更多",
+      "iconPath": "images/morebef.png",
+      "selectedIconPath": "images/moreAft.png"
+    },
+    {
       "pagePath": "pages/user/user",
       "text": "我的",
-      "iconPath": "/images/wode1.png",
-      "selectedIconPath": "images/wode2.png"
+      "iconPath": "images/wode2.png",
+      "selectedIconPath": "images/wode1.png"
     }
   ],
   "borderStyle": "black"    

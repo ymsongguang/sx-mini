@@ -1,2 +1,24 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- index.wxml -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <!-- login.wxml -->
+<view class="container" wx:if="{{!openId}}">
+  <view class="header">
+    <text class="title">欢迎登录</text>
+  </view>
+  <view class="content">
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="login-btn">微信登录</button>
+    <view wx:if="{{openId}}" class="openid-display">
+      <text>您的OpenID是：</text>
+      <text>{{openId}}</text>
+    </view>
+  </view>
+</view>
+<view class="cont" wx:if="{{openId}}">
+  <view class="user">
+    <text class="title">欢迎登录</text>
+  </view>
+  <view class="content">
+    
+  </view>
+</view>
+</scroll-view>
