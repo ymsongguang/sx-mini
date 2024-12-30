@@ -1,0 +1,46 @@
+<!--pages/more/more.wxml-->
+<button bindtap="subscribeMessage">订阅消息</button>
+<view class="container">
+  <view class="search-bar">
+    <input placeholder="请输入查询关键字" bindinput="handleInput" />
+    <button bindtap="handleSearch">搜索</button>
+  </view>
+  <scroll-view class="scrollarea" scroll-y type="list">
+  <table class="data-table">
+    <thead>
+      <tr class="item">
+        <th class="item-one">名称</th>
+        <th class="item-two">地址</th>
+        <th class="item-three">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <block wx:for="{{walletList}}" wx:key="code">
+        <tr class="item">
+          <td class="item-one">{{item.userRemark}}</td>
+          <td class="item-two"><input disabled="disabled" value="{{item.userAddr}}"/></td>
+          <button class="item-button" bindtap="handleDelete" data-userAddr="{{item.userAddr}}">删除</button>
+        </tr>
+      </block>
+      <!-- 加载更多 -->
+      <tr wx:if="{{loading}}">
+        <td colspan="3" style="text-align:center;">加载中...</td>
+      </tr>
+      <tr wx:if="{{!hasMore && !loading}}">
+        <td colspan="3" style="text-align:center;">没有更多数据了</td>
+      </tr>
+    </tbody>
+  </table>
+</scroll-view>
+  <view class="form-group">
+    <input id="userAddr" type="text" bindinput="handleUserAddrInput" placeholder="请输入钱包地址" />
+    
+    <input id="userRemark" type="text" bindinput="handleUserRemarkInput" placeholder="请输入备注" />
+  </view>
+
+  <view class="button-group">
+    <button bindtap="handleSubmit">新增提交</button>
+    <button bindtap="handleStopTask">停止任务</button>
+    <button bindtap="handleStartTask">开始任务</button>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+/* pages/more/more.wxss */
+/* 容器样式 */
+.container {
+  padding: 20rpx;
+  border: 1px solid #000;
+}
+
+/* 搜索栏样式 */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  border: 1px solid #000;
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 60rpx;
+  padding: 10rpx;
+  border: none;
+}
+
+.search-bar button {
+  width: auto;
+  height: 60rpx;
+  border: 1px solid #000;
+  border-left: none;
+  border-radius: 0 5rpx 5rpx 0;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+
+/* 表格样式 */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20rpx;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #000;
+  padding: 10rpx;
+  text-align: left;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+/* 输入框样式 */
+.form-group {
+  margin-bottom: 20rpx;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  border: 1px solid #000;
+  border-radius: 5rpx;
+}
+
+/* 按钮组样式 */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+
+.button-group button {
+  width: 30%;
+  height: 60rpx;
+  border: 1px solid #000;
+  border-radius: 5rpx;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1px solid #000;
+}
+.item-one {
+  width: 50px;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+.item-two {
+  width: 70%;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+.item-three {
+  width: 10%;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
+.item-button {
+  width: auto;
+  height: 60rpx;
+  border: 1px solid #000;
+  border-radius: 5rpx;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  font-size: small;
+}
